@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+label {
+  display: block!important;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.small-star {
+  position: absolute;
+  background-color: white;
+  width: 1px;
+  height: 1px;
+}
+
+.big-star {
+  position: absolute;
+  background-color: white;
+  width: 1.5px;
+  height: 1.5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 98vh;
+}
+
+.intro {
+  animation: intro 3s ease-out 1s;
+  color: rgb(75, 213, 238);
+  font-weight: 400;
+  font-size: 300%;
+  position: absolute;
+  opacity: 0;
+}
+
+.content {
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+  animation-fill-mode: forwards;
+  color: #EAD41C;
+  position: absolute;
+  animation-delay: 4s;
+}
+
+.deathStar {
+  background: #323232;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.deathStar:before {
+  content: "";
+  position: absolute;
+  background: #3b3b3b;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  left: 6px;
+  top: -6px;
+}
+
+.deathStar span {
+  position: absolute;
+  top: 20px;
+  left: 23px;
+  font-size: 30px;
+}
+
+.circle {
+  background: #212121;
+  position: relative;
+  top: 12px;
+  left: 49px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.trait {
+  background: #212121;
+  position: relative;
+  top: 22px;
+  width: 100%;
+  height: 3px;
+}
+
+footer {
+  height: 30px;
+  flex-shrink: 0;
+  text-align: right;
+  font-size: 12px;
+  color: #EAD41C;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
