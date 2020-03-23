@@ -26,4 +26,18 @@ function createSky(numStars) {
   }
 }
 
+function menu() {
+  const nav = document.querySelector('nav');
+  document.querySelector('#burger').addEventListener('click', function () {
+    if (this.classList.contains('active')) {
+      this.classList.remove("active");
+      nav.classList.remove("show");
+    } else {
+      this.classList.add("active");
+      nav.classList.add("show");
+    }
+  });
+}
+
 createSky(NUM_STARS);
+// menu();
