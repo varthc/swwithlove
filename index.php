@@ -173,19 +173,19 @@ $weeks = (datediffInWeeks('03/23/2020', date('m/d/Y')) + $isBigger);
       </p>
       <div class="row">
         <div class="col-md-4">
-          <img src="./images/iv/poster.jpg">
+          <img src="./images/iv/poster.jpg" class="img-fluid">
         </div>
 
         <div class="col-md-4">
-          <img src="./images/iv/vader_obiwan.jpg">
+          <img src="./images/iv/vader_obiwan.jpg" class="img-fluid">
         </div>
         <div class="col-md-4">
-          <img src="./images/iv/luke_stormtrooper.jpg">
+          <img src="./images/iv/luke_stormtrooper.jpg" class="img-fluid">
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 text-align-center">
-          <img src="./images/iv/leia_r2d2.png">
+          <img src="./images/iv/leia_r2d2.png" class="img-fluid">
         </div>
       </div>
     </div>
