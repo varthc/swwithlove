@@ -5,13 +5,36 @@ error_reporting(E_ALL);*/
 /*var_dump(openssl_get_cert_locations());
 echo "openssl.cafile: ", ini_get('openssl.cafile'), "\n";
 echo "curl.cainfo: ", ini_get('curl.cainfo'), "\n";*/
-require_once __DIR__ . '/vendor/autoload.php';
+/*require_once __DIR__ . '/vendor/autoload.php';
 
 use SWAPI\SWAPI;
 
 $swapi = new SWAPI;
-$film = $swapi->films()->get(1);
+$film = $swapi->films()->get(1);*/
 
+$films = array(
+  'Ep. IV - New Hope',
+  'Ep. V - Empire Strikes Back',
+  'Ep. VI - Return of the Jedi',
+  'Ep. I - The Phantom Menace',
+  'Ep. II - Attack of the Clones',
+  'Ep. III - Revenge of the Sith',
+  'Rogue One',
+  'Ep. VII - The Force Awakens',
+  'Ep. VIII - The Last Jedi',
+  'Ep. IX - Rise of Skywalker',
+);
+
+function datediffInWeeks($date1, $date2)
+{
+  if ($date1 > $date2) return datediffInWeeks($date2, $date1);
+  $first = DateTime::createFromFormat('m/d/Y', $date1);
+  $second = DateTime::createFromFormat('m/d/Y', $date2);
+  return floor($first->diff($second)->days / 7);
+}
+
+$isBigger = date('m/d/Y') > '03/23/2020' ? 1 : 0;
+$weeks = (datediffInWeeks('03/23/2020', date('m/d/Y')) + $isBigger);
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +43,7 @@ $film = $swapi->films()->get(1);
 
 <head>
   <meta charset="utf-8">
-  <title>Star Wars | Review with love</title>
+  <title>Star Wars | Reviewing the Saga with my love</title>
   <meta name="description" content="A Star Wars review site with my baby">
   <meta name="author" content="varthc">
 
@@ -37,7 +60,7 @@ $film = $swapi->films()->get(1);
     </section>
     <section class="content">
       <h1>
-        Próxima Película: <?= $film->title; ?>
+        Próxima Película: <?= $films[$weeks] ?>
       </h1>
 
       <div class="row">
