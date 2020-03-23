@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
+/*ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+error_reporting(E_ALL);*/
 /*var_dump(openssl_get_cert_locations());
 echo "openssl.cafile: ", ini_get('openssl.cafile'), "\n";
 echo "curl.cainfo: ", ini_get('curl.cainfo'), "\n";*/
