@@ -10,6 +10,10 @@ label {
   display: block!important;
 }
 
+.data {
+  color: #000!important; 
+}
+
 .data label {
   font-weight: bold;
 }
@@ -38,7 +42,7 @@ h1 {
 }
 
 #section1 .images {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .small-star {
