@@ -1,14 +1,17 @@
 body {
   margin: 0;
   background-color: black;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  /*display: flex;
+  flex-direction: column;*/
   font-family: Open Sans;
 }
 
 label {
   display: block!important;
+}
+
+.data label {
+  font-weight: bold;
 }
 
 .img-fluid {
@@ -28,6 +31,10 @@ h1 {
 
 #section1 h1 {
   font-weight: bold;
+}
+
+#section1 p:last-child {
+  margin-bottom: 20px;
 }
 
 .small-star {

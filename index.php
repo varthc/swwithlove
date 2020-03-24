@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("America/Argentina/Buenos_Aires");
 /*ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);*/
@@ -183,8 +184,19 @@ $weeks = (datediffInWeeks('03/23/2020', date('m/d/Y')) + $isBigger);
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 text-align-center">
+        <div class="col-md-6 text-right">
           <img src="./images/iv/poster.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-left data">
+          <label>Año de Estreno</label> 1977
+          <label>Personajes</label> 
+          <ul>
+          <li>Princesa Leia - Carrie Fisher </li>
+          <li>Luke Skywalker - Mark Hamill </li>
+          <li>Han Solo - Harrison Ford </li>
+          <li>Darth Vader - Voz: James Earl Jones </li>
+          <li>Obi Wan Kenobi (Old Ben) - Sir Alec Guinness </li>
+          </ul>
         </div>
       </div>
     </div>
