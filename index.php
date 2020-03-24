@@ -172,7 +172,7 @@ $weeks = (datediffInWeeks('03/23/2020', date('m/d/Y')) + $isBigger);
         y devolver la libertad a la
         galaxia…
       </p>
-      <div class="row">
+      <div class="row images">
         <div class="col-md-4">
           <img src="./images/iv/vader_obiwan.jpg" class="img-fluid">
         </div>

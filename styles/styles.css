@@ -33,8 +33,12 @@ h1 {
   font-weight: bold;
 }
 
-#section1 p:last-child {
-  margin-bottom: 20px;
+#section1 p {
+  margin: 0;
+}
+
+#section1 .images {
+  margin-top: 20px
 }
 
 .small-star {
