@@ -50,6 +50,14 @@
 #section1 {
   background-image: url('../images/iv/binary_sunset.jpg');
   background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position: center;
+  /*background-size: 100% 100%;*/
+}
+
+#section2 {
+  background-image: url('../images/v/background.png');
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;

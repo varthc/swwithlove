@@ -1,4 +1,16 @@
-var end = new Date('03/23/2020 10:00:00 PM');
+const movieDates = [
+  '03/23/2020 10:00:00 PM',
+  '03/30/2020 10:00:00 PM',
+  '04/06/2020 10:00:00 PM',
+  '04/13/2020 10:00:00 PM',
+  '04/20/2020 10:00:00 PM',
+  '04/27/2020 10:00:00 PM',
+  '05/04/2020 10:00:00 PM',
+  '05/11/2020 10:00:00 PM',
+  '05/18/2020 10:00:00 PM',
+  '05/25/2020 10:00:00 PM'
+];
+
 const _second = 1000;
 const _minute = _second * 60;
 const _hour = _minute * 60;
@@ -22,15 +34,10 @@ setInterval(showRemaining, 1000);
 
 function getEndDate() {
   const now = new Date();
-  const distance = end - now;
-  if (distance < 0) {
-    end = new Date();
-    end.setDate(end.getDate() + 7);
-    /*console.log('end', end);
-    console.log('end - now;', end - now);*/
-    return end - now;
-  }
-
+  const end = movieDates.reduce((prev, current) => 
+    new Date(prev).getTime() > now.getTime() && now.getTime() < new Date(current).getTime() ? prev : current
+  );
+  const distance = new Date(end) - now;
   return distance;
 }
 

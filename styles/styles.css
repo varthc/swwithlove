@@ -11,7 +11,12 @@ label {
 }
 
 .data {
-  color: #000!important; 
+  color: #e1e1e1!important;
+}
+
+.data span {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .data label {
@@ -41,8 +46,20 @@ h1 {
   margin: 0;
 }
 
-#section1 .images {
-  margin-top: 20px;
+.images {
+  margin-top: 30px;
+}
+
+.images img {
+  border-radius: 12px;
+}
+
+#section1 .img-fluid {
+  box-shadow: 0px 0px 40px 0px #EAD41C;
+}
+
+#section2 .img-fluid {
+  box-shadow: 0px 0px 40px 0px #010048;
 }
 
 .small-star {
