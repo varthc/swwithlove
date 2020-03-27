@@ -54,6 +54,10 @@ h1 {
   border-radius: 12px;
 }
 
+#section2 .images {
+  margin-left: 159px;
+}
+
 #section1 .img-fluid {
   box-shadow: 0px 0px 40px 0px #EAD41C;
 }
